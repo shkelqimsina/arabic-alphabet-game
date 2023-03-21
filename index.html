@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Alphabet Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="introduction">
+        <h1 class="title">Learn Arabic Alphabet</h1>
+        <div id="alphabet" class="alphabet"></div>
+        <button id="start-quiz">Start Quiz</button>
+        <button id="reset-game" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <div id="quiz-container" class="game-container" style="display: none;">
+        <p class="time-left">Time left: <span id="time-left">10</span></p>
+        <p class="score">Score: <span id="score">0</span></p>
+
+        <div class="arabic-letter" id="arabic-letter"></div>
+        <div class="options">
+            <button class="option" onclick="checkAnswer(this)"></button>
+            <button class="option" onclick="checkAnswer(this)"></button>
+            <button class="option" onclick="checkAnswer(this)"></button>
+            <button class="option" onclick="checkAnswer(this)"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
